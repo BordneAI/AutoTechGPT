@@ -42,7 +42,7 @@
       letter-spacing: 0.01em;
     }
     .container {
-      max-width: 920px;
+      max-width: 950px;
       margin: 2.5rem auto 1.5rem auto;
       padding: 0 1rem;
       background: var(--container-bg);
@@ -125,11 +125,27 @@
       margin-right: 0.6em;
       vertical-align: middle;
     }
-    @media (max-width: 600px) {
-      .container { padding: 0 0.2rem; }
-      section { padding: 1.2rem 0.4rem; }
+    .prompt-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+      justify-content: flex-start;
+    }
+    .prompt-card {
+      background: #23282f;
+      border: 1px solid #23272b;
+      border-radius: 10px;
+      padding: 1rem 1.3rem;
+      font-size: 1.06em;
+      width: 260px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.09);
+      margin-bottom: 0.7rem;
+    }
+    @media (max-width: 800px) {
+      .prompt-grid { flex-direction: column; }
+      .prompt-card { width: 100%; }
       .features-list { flex-direction: column; gap: 0.5rem; }
-      .feature-card { max-width: 100%; }
     }
     footer {
       text-align: center;
@@ -149,83 +165,83 @@
 <div class="container">
 
   <section>
-    <h2>🔧 What is AutoTechGPT?</h2>
-    <div class="features-list">
-      <div class="feature-card"><span>🔍</span>Diagnostics & Troubleshooting</div>
-      <div class="feature-card"><span>📟</span>OBD-II Code Lookup</div>
-      <div class="feature-card"><span>🔩</span>Repair Info & Torque Specs</div>
-      <div class="feature-card"><span>🧰</span>Factory Maintenance Schedules</div>
-      <div class="feature-card"><span>🧠</span>Learning & Career Training</div>
-      <div class="feature-card"><span>🏁</span>Motorsports Career Guidance</div>
-    </div>
+    <h2>🟢 Quick Start</h2>
     <p>
-      <strong>AutoTechGPT</strong> is an AI-powered assistant built for the auto industry, designed to help with diagnostics, repairs, training, and more. Whether you're in the shop, learning the trade, or working on your own build, AutoTechGPT gives you actionable answers and career advice—fast.
+      Click below to launch AutoTechGPT and get instant automotive help.<br>
+      <a class="button" href="https://chatgpt.com/g/g-67cd8fdbad208191bd324de8ac19d901-autotechgpt" target="_blank" rel="noopener">🔗 Chat with AutoTechGPT</a>
     </p>
   </section>
 
   <section>
-    <h2>🚀 How to Use AutoTechGPT</h2>
-    <ol>
-      <li>
-        <strong>Open a Chat Session:</strong><br />
-        Click the button below to launch AutoTechGPT in your browser:
-        <br />
-        <a class="button" href="https://chatgpt.com/g/g-67cd8fdbad208191bd324de8ac19d901-autotechgpt" target="_blank" rel="noopener">🔗 Chat with AutoTechGPT</a>
-      </li>
-      <li>
-        <strong>Use the Guided Menu System:</strong><br />
-        As soon as the chat loads, AutoTechGPT will greet you with a menu of options:
-        <ul>
-          <li><b>1️⃣ Diagnostics & Troubleshooting</b> – Identify issues and get step-by-step repair advice</li>
-          <li><b>2️⃣ Maintenance & Service Intervals</b> – Find out what to service and when, by make/model/year</li>
-          <li><b>3️⃣ OBD-II Code Lookup</b> – Get code definitions, causes, and common fixes</li>
-          <li><b>4️⃣ Parts & Repair Info</b> – See torque specs, part comparisons, and tool tips</li>
-          <li><b>5️⃣ Technician Chat</b> – Ask general repair questions or discuss techniques</li>
-          <li><b>6️⃣ Automotive Education</b> – Learn mechanic basics, advanced skills, or racing career info</li>
-        </ul>
-        Just type the number or describe your issue—AutoTechGPT will guide you through.
-      </li>
-      <li>
-        <strong>Access Advanced Features:</strong>
-        <ul>
-          <li>
-            <b>Brand-Specific Overlays:</b> Get tailored advice for Honda, Toyota, Nissan, Dodge, Chevy, Ford, and more.
-          </li>
-          <li>
-            <b>Enthusiast/Tuning Support:</b> If you mention performance mods, tunes, or track builds, AutoTechGPT switches to a performance-aware mode (with mod & warranty cautions).
-          </li>
-          <li>
-            <b>Professional Learning Paths:</b> Use the education menu to plan your career, find training resources, or get certification advice (like ASE or motorsport licenses).
-          </li>
-          <li>
-            <b>Emoji-Enhanced Chat:</b> By default, AutoTechGPT uses emoji for clarity and fun. Say <code>no emojis</code> anytime to disable them.
-          </li>
-        </ul>
-      </li>
-      <li>
-        <strong>Ask Anything:</strong>
-        <ul>
-          <li>Example: <code>“OBD-II code P0420 on 2015 Camry”</code></li>
-          <li>Example: <code>“Torque specs for head bolts on 2012 Silverado 5.3L”</code></li>
-          <li>Example: <code>“How can I become a certified mechanic?”</code></li>
-        </ul>
-      </li>
-      <li>
-        <strong>Need the Code or Want to Contribute?</strong>
-        <br />
-        View the open-source repo and documentation:
-        <a class="button github-button" href="https://github.com/BordneAI/AutoTechGPT" target="_blank" rel="noopener">View on GitHub</a>
-      </li>
-    </ol>
+    <h2>✨ Navigating the Menu System</h2>
+    <p>
+      When you open AutoTechGPT, you'll see four main prompt buttons to get started:
+    </p>
+    <div class="prompt-grid">
+      <div class="prompt-card">
+        <b>Open the main menu</b><br>
+        <span style="color:#b6e354;">→ Shows all available features, from diagnostics to technician chat and training.</span>
+      </div>
+      <div class="prompt-card">
+        <b>Start diagnostics and troubleshooting</b><br>
+        <span style="color:#b6e354;">→ Begin by describing your vehicle and problem. Get step-by-step repair guidance or code help.</span>
+      </div>
+      <div class="prompt-card">
+        <b>Show maintenance schedule options</b><br>
+        <span style="color:#b6e354;">→ View recommended service intervals and common maintenance tasks for any make/model/year.</span>
+      </div>
+      <div class="prompt-card">
+        <b>Launch automotive education and training</b><br>
+        <span style="color:#b6e354;">→ Access mechanic lessons, advanced technical skills, and racing/motorsport career advice.</span>
+      </div>
+    </div>
+    <p>
+      <b>Tip:</b> You can type your own question at any time, or click one of the menu buttons to follow a guided path.
+    </p>
+    <ul>
+      <li><b>Menu navigation:</b> Just respond with the number or keyword shown in the chat (e.g. "1" for Diagnostics & Troubleshooting).</li>
+      <li><b>Back/Exit:</b> Type "exit menu" or "back" to return or ask a new question.</li>
+      <li><b>Personalized answers:</b> Include your vehicle's make, model, year, and engine for the most accurate info!</li>
+    </ul>
   </section>
 
   <section>
-    <h2>💡 Tips & Best Practices</h2>
+    <h2>💡 Cool Things You Can Ask AutoTechGPT</h2>
     <ul>
-      <li>Be as specific as possible—include year, make, model, and symptoms for best results.</li>
-      <li>AutoTechGPT always encourages safe, legal repairs and never provides instructions for illegal or unsafe modifications.</li>
-      <li>Verify any critical specs against OEM documentation before performing repairs.</li>
+      <li><code>OBD-II code P0301 on 2016 Ford F-150—what’s the cause?</code></li>
+      <li><code>Show me the maintenance schedule for 2018 Toyota Camry Hybrid.</code></li>
+      <li><code>Torque specs for head bolts on 2012 Chevy Silverado 5.3L</code></li>
+      <li><code>What tools do I need to replace front brakes on a 2020 Honda Accord?</code></li>
+      <li><code>Can you compare OEM vs aftermarket spark plugs for a Nissan Altima?</code></li>
+      <li><code>How do I become ASE certified?</code></li>
+      <li><code>Launch advanced electrical training</code></li>
+      <li><code>What’s the best way to diagnose a rough idle on a Subaru WRX?</code></li>
+      <li><code>How do I get into racing as a mechanic?</code></li>
+      <li><code>Show me all available menu options</code></li>
+      <li><code>I added a downpipe to my Civic Si—will I get a CEL?</code></li>
+      <li><code>No emojis</code> (to make the chat strictly technical!)</li>
     </ul>
+    <p>
+      <strong>Pro tip:</strong> Mention any mods or tuning, and AutoTechGPT will adapt its advice!
+    </p>
+  </section>
+
+  <section>
+    <h2>🚦 Navigation and Advanced Features</h2>
+    <ul>
+      <li><b>Brand-Specific Support:</b> Get extra help for Honda, Toyota, Nissan, Dodge, Chevy, Ford, and more. Mention your brand for tailored advice!</li>
+      <li><b>Performance Mode:</b> If you ask about mods or racing, AutoTechGPT adds tuning and warranty notes automatically.</li>
+      <li><b>Emoji Layer:</b> Fun and helpful emoji are used by default. You can turn this off with <code>no emojis</code>.</li>
+      <li><b>Learning Tracks:</b> Choose mechanic basics, advanced diagnostics, or motorsport careers from the training menu.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📂 GitHub & Community</h2>
+    <p>
+      View source, request features, or contribute code:<br>
+      <a class="button github-button" href="https://github.com/BordneAI/AutoTechGPT" target="_blank" rel="noopener">View on GitHub</a>
+    </p>
   </section>
 
 </div>
