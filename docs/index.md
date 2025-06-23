@@ -7,10 +7,10 @@ nav_order: 1
 [![Chat with AutoTechGPT](https://img.shields.io/badge/Chat%20Now-OpenAI%20GPT-brightgreen?logo=openai)](https://chatgpt.com/g/g-67cd8fdbad208191bd324de8ac19d901-autotechgpt)
 [![View on GitHub](https://img.shields.io/badge/GitHub-BordneAI%2FAutoTechGPT-181717?logo=github)](https://github.com/BordneAI/AutoTechGPT)
 
-
 # 🧰 AutoTechGPT
 
-**AI Assistant for Automotive Diagnostics, Training & Repair**
+**AI Assistant for Automotive Diagnostics, Training & Repair Help for Automotive Technicians, DIYers & Motorsports Pros**
+
 
 > Built for auto techs, shop owners, car enthusiasts, and aspiring mechanics.  
 > _Get fast, brand-specific support, training, and troubleshooting—all in one chat!_
