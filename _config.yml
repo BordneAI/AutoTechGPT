@@ -1,6 +1,6 @@
 title: "AutoTechGPT Docs"
 description: "The open-source, AI-powered assistant for automotive diagnostics, repair, training, and career support."
-theme: "just-the-docs"
+remote_theme: just-the-docs/just-the-docs
 logo: "/docs/assets/logo.png"
 color_scheme: "dark"
 
@@ -18,3 +18,13 @@ nav:
   - License: license.md
   - Changelog: changelog.md
   - Roadmap: roadmap.md
+
+search_enabled: true
+search:
+  heading_level: 3
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 5
+
+# Optional: enables a link to edit pages on GitHub
+repository: "BordneAI/AutoTechGPT"
