@@ -11,14 +11,11 @@ nav_order: 1
 
 **AI Assistant for Automotive Diagnostics, Training & Repair Help for Automotive Technicians, DIYers & Motorsports Pros**
 
-
 > Built for auto techs, shop owners, car enthusiasts, and aspiring mechanics.  
 > _Get fast, brand-specific support, training, and troubleshooting—all in one chat!_
 
 - 🚗 [Try the live AI Chat](https://chatgpt.com/g/g-67cd8fdbad208191bd324de8ac19d901-autotechgpt)
 - 🐙 [View Source on GitHub](https://github.com/BordneAI/AutoTechGPT)
-
----
 
 ## 🚦 Key Features
 
