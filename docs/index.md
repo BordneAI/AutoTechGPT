@@ -9,7 +9,8 @@ nav_order: 1
 
 # 🧰 AutoTechGPT
 
-**AI Assistant for Automotive Diagnostics, Training & Repair**
+**AI Assistant for Automotive Diagnostics, Training & Repair Help for Automotive Technicians, DIYers & Motorsports Pros**
+
 
 > Built for auto techs, shop owners, car enthusiasts, and aspiring mechanics.  
 > _Get fast, brand-specific support, training, and troubleshooting—all in one chat!_
