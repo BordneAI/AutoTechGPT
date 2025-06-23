@@ -14,110 +14,96 @@
       --accent: #d11a1a;
       --button-bg: #007acc;
       --button-hover: #005fa3;
-      --card-bg: #202428;
-      --dropdown-bg: #2b2f33;
-      --shadow: 0 2px 16px rgba(0,0,0,0.3);
-      --radius: 6px;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      --shadow: 0 2px 8px rgba(0,0,0,0.2);
+      --radius: 8px;
     }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
       background: var(--bg);
       color: var(--text);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
     }
     header {
       background: var(--header-bg);
-      box-shadow: var(--shadow);
+      color: var(--text);
+      padding: 1rem 2rem;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    .top-bar {
+    .title-bar {
       display: flex;
       align-items: baseline;
-      justify-content: center;
-      padding: 1rem;
-      position: relative;
+      gap: 0.5rem;
     }
-    .top-bar h1 {
-      font-size: 2.5rem;
+    .title-bar h1 {
+      margin: 0;
+      font-size: 1.75rem;
     }
-    .byline {
-      position: absolute;
-      right: 1rem;
-      top: 1rem;
-      font-size: 0.85rem;
+    .title-bar .byline {
+      font-size: 0.9rem;
       color: var(--muted);
     }
-    nav {
-      background: var(--container-bg);
-    }
-    .menu {
+    nav .menu {
       list-style: none;
+      margin: 0;
+      padding: 0;
       display: flex;
-      justify-content: center;
+      gap: 1rem;
+      align-items: center;
     }
-    .menu-item, .menu > li {
-      position: relative;
-    }
-    .menu > li {
-      margin: 0 1rem;
-    }
-    .menu a {
-      display: block;
-      padding: 0.75rem 1rem;
+    nav .menu a {
       color: var(--text);
       text-decoration: none;
-      font-weight: 500;
-      border-radius: var(--radius);
-      transition: background 0.2s;
+      padding: 0.5rem;
     }
-    .menu a:hover {
-      background: var(--dropdown-bg);
+    nav .menu-item {
+      position: relative;
     }
-    .dropdown {
+    nav .menu-item .dropdown {
       display: none;
       position: absolute;
+      background: var(--container-bg);
+      list-style: none;
+      box-shadow: var(--shadow);
+      margin: 0;
+      padding: 0.5rem 0;
+      border-radius: var(--radius);
       top: 100%;
       left: 0;
-      background: var(--dropdown-bg);
-      list-style: none;
-      border-radius: var(--radius);
-      overflow: hidden;
-      min-width: 180px;
-      box-shadow: var(--shadow);
     }
-    .dropdown li a {
-      padding: 0.5rem 1rem;
-      font-size: 0.95rem;
-    }
-    .menu-item:hover .dropdown {
+    nav .menu-item:hover .dropdown {
       display: block;
+    }
+    nav .dropdown li {
+      white-space: nowrap;
+    }
+    nav .dropdown a {
+      display: block;
+      padding: 0.5rem 1rem;
     }
     .container {
       max-width: 900px;
-      margin: 2.5rem auto;
+      margin: 2rem auto;
       padding: 0 1rem;
       background: var(--container-bg);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
     }
     section {
-      padding: 2rem 0;
-      border-bottom: 1px solid #25282b;
-    }
-    section:last-child {
-      border-bottom: none;
+      margin-bottom: 2rem;
     }
     h2 {
       color: var(--accent);
       margin-bottom: 1rem;
-      font-size: 1.8rem;
+    }
+    ul, ol {
+      margin: 0 0 1rem 1.5rem;
     }
     .features-list {
       display: flex;
@@ -125,55 +111,33 @@
       gap: 1rem;
     }
     .feature-card {
-      background: var(--card-bg);
-      flex: 1 1 200px;
+      background: var(--header-bg);
       padding: 1rem;
       border-radius: var(--radius);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      flex: 1 1 200px;
+      box-shadow: var(--shadow);
     }
-    .feature-card span {
-      font-size: 1.3rem;
-      margin-right: 0.5rem;
+    code {
+      background: #2e2e38;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
     }
     .button {
       display: inline-block;
-      margin-top: 1rem;
       background: var(--button-bg);
       color: #fff;
       padding: 0.75rem 1.5rem;
       border-radius: var(--radius);
       text-decoration: none;
+      font-weight: bold;
       transition: background 0.2s;
-      font-weight: 600;
     }
     .button:hover {
       background: var(--button-hover);
     }
-    ul {
-      margin-left: 1.2rem;
-    }
-    code {
-      background: var(--card-bg);
-      padding: 0.2em 0.5em;
-      border-radius: var(--radius);
-      font-size: 0.95em;
-      color: #f7c873;
-    }
-    @media (max-width: 600px) {
-      .features-list {
-        flex-direction: column;
-      }
-      .menu {
-        flex-direction: column;
-        align-items: center;
-      }
-      .menu > li {
-        margin: 0.5rem 0;
-      }
-    }
     footer {
       text-align: center;
-      padding: 1.5rem 0;
+      padding: 1rem;
       color: var(--muted);
       font-size: 0.9rem;
     }
@@ -181,9 +145,8 @@
 </head>
 <body>
 
-
 <header>
-  <div class="top-bar">
+  <div class="title-bar">
     <h1>AutoTechGPT 🧰</h1>
     <span class="byline">by BordneAI</span>
   </div>
@@ -193,12 +156,12 @@
       <li class="menu-item">
         <a href="#">📂 Docs ▼</a>
         <ul class="dropdown">
-          <li><a href="README.html">📘 README</a></li>
-          <li><a href="CONTRIBUTING.html">🛠️ Contributing</a></li>
-          <li><a href="CODE_OF_CONDUCT.html">📝 Code of Conduct</a></li>
-          <li><a href="PRIVACY_POLICY.html">🔒 Privacy Policy</a></li>
-          <li><a href="SECURITY.html">🔐 Security Policy</a></li>
-          <li><a href="LICENSE.html">📃 License</a></li>
+          <li><a href="README.md">📘 README</a></li>
+          <li><a href="CONTRIBUTING.md">🛠️ Contributing</a></li>
+          <li><a href="CODE_OF_CONDUCT.md">📝 Code of Conduct</a></li>
+          <li><a href="PRIVACY_POLICY.md">🔒 Privacy Policy</a></li>
+          <li><a href="SECURITY.md">🔐 Security Policy</a></li>
+          <li><a href="LICENSE">📃 License</a></li>
         </ul>
       </li>
       <li><a href="https://chatgpt.com/g/g-67cd8fdbad208191bd324de8ac19d901-autotechgpt">💬 Chat</a></li>
@@ -207,50 +170,88 @@
   </nav>
 </header>
 
-
 <div class="container">
+
   <section>
     <h2>🔧 What is AutoTechGPT?</h2>
     <div class="features-list">
       <div class="feature-card"><span>🔍</span>Diagnostics & Troubleshooting</div>
       <div class="feature-card"><span>📟</span>OBD-II Code Lookup</div>
       <div class="feature-card"><span>🔩</span>Repair Info & Torque Specs</div>
-      <div class="feature-card"><span>🧰</span>Maintenance Schedules</div>
-      <div class="feature-card"><span>🧠</span>Training & Career Guidance</div>
-      <div class="feature-card"><span>🏁</span>Racing & Performance</div>
+      <div class="feature-card"><span>🧰</span>Factory Maintenance Schedules</div>
+      <div class="feature-card"><span>🧠</span>Learning & Career Training</div>
+      <div class="feature-card"><span>🏁</span>Motorsports Career Guidance</div>
     </div>
-    <p>AutoTechGPT is your AI-powered assistant for all things automotive, providing diagnostics, repair guidance, and professional development tips.</p>
+    <p>
+      <strong>AutoTechGPT</strong> is an AI-powered assistant built for the auto industry, helping with diagnostics, repairs, training, and more. Get actionable answers and career advice—fast.
+    </p>
   </section>
 
   <section>
-    <h2>✨ How to Use</h2>
-    <ol>
-      <li>Open the chat via the <strong>Chat</strong> link in the menu.</li>
-      <li>Use the guided menu or type your own question at any time.</li>
-      <li>Include your vehicle’s <code>make, model, year</code>, and <code>engine</code> for precise results.</li>
-    </ol>
-    <a class="button" href="https://chatgpt.com/g/g-67cd8fdbad208191bd324de8ac19d901-autotechgpt" target="_blank">🔗 Start Chatting</a>
-  </section>
-
-  <section>
-    <h2>💡 Cool Prompts</h2>
+    <h2>✨ Navigating the Menu System</h2>
+    <p>
+      As soon as you open the chat, select one of the main options or type a custom question:
+    </p>
     <ul>
-      <li><code>“OBD-II code P0302 on 2017 Honda Civic—what’s the cause?”</code></li>
-      <li><code>“Show maintenance schedule for 2018 Camry Hybrid.”</code></li>
-      <li><code>“Torque specs for head bolts on 2012 Silverado 5.3L.”</code></li>
-      <li><code>“What tools needed for front brake service on a 2020 Accord?”</code></li>
-      <li><code>“Compare OEM vs aftermarket spark plugs for Altima.”</code></li>
+      <li><strong>1️⃣ Diagnostics & Troubleshooting</strong> – Identify issues and get repair guidance.</li>
+      <li><strong>2️⃣ Maintenance & Service Intervals</strong> – View factory service schedules.</li>
+      <li><strong>3️⃣ OBD-II Code Lookup</strong> – Decode codes, causes, and fixes.</li>
+      <li><strong>4️⃣ Parts & Repair Info</strong> – Compare parts, torque specs, and tools.</li>
+      <li><strong>5️⃣ Technician Chat</strong> – Ask general repair questions or discuss techniques.</li>
+      <li><strong>6️⃣ Automotive Education</strong> – Access mechanic training & racing career advice.</li>
+    </ul>
+    <p>
+      <em>Tip:</em> Type <code>exit menu</code> or <code>back</code> to navigate out, or include your vehicle’s make/model/year for best results.
+    </p>
+  </section>
+
+  <section>
+    <h2>💡 Cool Things You Can Ask</h2>
+    <ul>
+      <li><code>"OBD-II code P0420 on 2017 Civic – what's wrong and how do I fix it?"</code></li>
+      <li><code>"Maintenance schedule for 2019 Toyota Camry Hybrid"</code></li>
+      <li><code>"Torque specs for head bolts on 2015 Silverado 5.3L"</code></li>
+      <li><code>"Compare OEM vs aftermarket brake pads for Honda Accord"</code></li>
+      <li><code>"What tools to replace front brakes on a 2020 Honda Accord?"</code></li>
+      <li><code>"How to become ASE certified"</code></li>
+      <li><code>"Launch advanced electrical troubleshooting training"</code></li>
+      <li><code>"I added a downpipe to my Civic Si—will I get a CEL?"</code></li>
+      <li><code>"No emojis"</code> (for strictly technical responses)</code></li>
     </ul>
   </section>
 
   <section>
-    <h2>📚 Project Policies</h2>
-    <p>Access detailed project documents via the <strong>Docs</strong> menu.</p>
+    <h2>🚦 Advanced & Brand-Specific Features</h2>
+    <ul>
+      <li><strong>Brand Support:</strong> Tailored advice for Honda, Toyota, Nissan, Dodge, Chevy, Ford, and more.</li>
+      <li><strong>Performance Mode:</strong> Detects mods and racing queries, adding tuning tips & warranty cautions.</li>
+      <li><strong>Education Tracks:</strong> Beginner to advanced diagnostics, plus motorsport career guidance.</li>
+      <li><strong>Emoji Layer:</strong> Toggle off with <code>no emojis</code> for pure technical chat.</li>
+      <li><strong>Safety & Ethics:</strong> No illegal or unsafe modification advice—always encourages OEM standards.</li>
+    </ul>
   </section>
+
+  <section>
+    <h2>🟢 Start Your Session</h2>
+    <p>
+      Ready? Click below to launch AutoTechGPT in your browser:
+    </p>
+    <p><a class="button" href="https://chatgpt.com/g/g-67cd8fdbad208191bd324de8ac19d901-autotechgpt" target="_blank" rel="noopener">🔗 Chat with AutoTechGPT</a></p>
+  </section>
+
+  <section>
+    <h2>📂 GitHub & Community</h2>
+    <p>
+      Contribute, report issues, or explore the code on GitHub:<br>
+      <a class="button" href="https://github.com/BordneAI/AutoTechGPT" target="_blank" rel="noopener">🐙 View on GitHub</a>
+    </p>
+  </section>
+
 </div>
 
 <footer>
-  &copy; 2025 AutoTechGPT by BordneAI. All rights reserved.
+  &copy; 2025 AutoTechGPT by BordneAI. Built with ❤️ for the automotive community.<br>
+  <span style="color: var(--muted);">Not affiliated with any vehicle manufacturer. All trademarks belong to their respective owners.</span>
 </footer>
 
 </body>
