@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | AutoTechGPT</title>
+  <style>
+    :root {
+      --bg: #181c20;
+      --header-bg: #101316;
+      --container-bg: #23272b;
+      --text: #e9ecef;
+      --muted: #a0a4a8;
+      --accent: #d11a1a;
+      --button-bg: #007acc;
+      --button-hover: #005fa3;
+      --card-bg: #202428;
+      --dropdown-bg: #2b2f33;
+      --shadow: 0 2px 16px rgba(0,0,0,0.3);
+      --radius: 6px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--header-bg);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .top-bar {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      padding: 1rem;
+      position: relative;
+    }
+    .top-bar h1 {
+      font-size: 2.5rem;
+    }
+    .byline {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    nav {
+      background: var(--container-bg);
+    }
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    .menu-item, .menu > li {
+      position: relative;
+    }
+    .menu > li {
+      margin: 0 1rem;
+    }
+    .menu a {
+      display: block;
+      padding: 0.75rem 1rem;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: var(--radius);
+      transition: background 0.2s;
+    }
+    .menu a:hover {
+      background: var(--dropdown-bg);
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: var(--dropdown-bg);
+      list-style: none;
+      border-radius: var(--radius);
+      overflow: hidden;
+      min-width: 180px;
+      box-shadow: var(--shadow);
+    }
+    .dropdown li a {
+      padding: 0.5rem 1rem;
+      font-size: 0.95rem;
+    }
+    .menu-item:hover .dropdown {
+      display: block;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      padding: 0 1rem;
+      background: var(--container-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    section {
+      padding: 2rem 0;
+      border-bottom: 1px solid #25282b;
+    }
+    section:last-child {
+      border-bottom: none;
+    }
+    h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+    .features-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .feature-card {
+      background: var(--card-bg);
+      flex: 1 1 200px;
+      padding: 1rem;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .feature-card span {
+      font-size: 1.3rem;
+      margin-right: 0.5rem;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      background: var(--button-bg);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: background 0.2s;
+      font-weight: 600;
+    }
+    .button:hover {
+      background: var(--button-hover);
+    }
+    ul {
+      margin-left: 1.2rem;
+    }
+    code {
+      background: var(--card-bg);
+      padding: 0.2em 0.5em;
+      border-radius: var(--radius);
+      font-size: 0.95em;
+      color: #f7c873;
+    }
+    @media (max-width: 600px) {
+      .features-list {
+        flex-direction: column;
+      }
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+      .menu > li {
+        margin: 0.5rem 0;
+      }
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  
+<header>
+  <div class="top-bar">
+    <h1>AutoTechGPT 🧰</h1>
+    <span class="byline">by BordneAI</span>
+  </div>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li class="menu-item">
+        <a href="#">📂 Docs ▼</a>
+        <ul class="dropdown">
+          <li><a href="README.html">📘 README</a></li>
+          <li><a href="CONTRIBUTING.html">🛠️ Contributing</a></li>
+          <li><a href="CODE_OF_CONDUCT.html">📝 Code of Conduct</a></li>
+          <li><a href="PRIVACY_POLICY.html">🔒 Privacy Policy</a></li>
+          <li><a href="SECURITY.html">🔐 Security Policy</a></li>
+          <li><a href="LICENSE.html">📃 License</a></li>
+        </ul>
+      </li>
+      <li><a href="https://chatgpt.com/g/g-67cd8fdbad208191bd324de8ac19d901-autotechgpt">💬 Chat</a></li>
+      <li><a href="https://github.com/BordneAI/AutoTechGPT">🐙 GitHub</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <div class="container">
+    <article>
+    <h1>Privacy Policy</h1>
+
+<p><em>Last updated: June 2025</em></p>
+
+<p>Thank you for using <strong>AutoTechGPT</strong>.<br />
+Your privacy is important to us. This Privacy Policy explains what information is (and isn’t) collected, how it is used, and your rights as a user.</p>
+
+<hr />
+
+<h2>1. What Information Does AutoTechGPT Collect?</h2>
+
+<h3>a. When Using This Repository (GitHub)</h3>
+
+<ul>
+<li>We do <strong>not</strong> collect personal data via this GitHub repository.</li>
+<li>GitHub may collect standard log data as part of their platform; see <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement">GitHub’s Privacy Statement</a> for more.</li>
+</ul>
+
+<h3>b. When Chatting with AutoTechGPT (OpenAI)</h3>
+
+<ul>
+<li>When you use the <a href="https://chatgpt.com/g/g-67cd8fdbad208191bd324de8ac19d901-autotechgpt">AutoTechGPT chat</a>, your conversations are processed and stored by <strong>OpenAI</strong> to provide AI responses, improve services, and for moderation/safety.</li>
+<li>The project team <strong>does not</strong> have access to your private conversations unless you choose to share them in GitHub Issues or Discussions.</li>
+<li>For details, please review the <a href="https://openai.com/policies/privacy-policy">OpenAI Privacy Policy</a> and <a href="https://openai.com/policies/terms-of-use">Terms of Use</a>.</li>
+</ul>
+
+<hr />
+
+<h2>2. How Is Information Used?</h2>
+
+<ul>
+<li><strong>Chat data</strong> is processed by OpenAI to generate relevant and accurate answers.</li>
+<li>Aggregate, non-identifiable usage data may be used by OpenAI to improve its models.</li>
+<li>We do <strong>not</strong> sell, share, or use any data from chat sessions for marketing or third-party purposes.</li>
+</ul>
+
+<hr />
+
+<h2>3. Your Choices &amp; Rights</h2>
+
+<ul>
+<li>You can use AutoTechGPT anonymously; no login is required for this repository.</li>
+<li>When using OpenAI chat, review and adjust your <a href="https://platform.openai.com/account/privacy-settings">OpenAI privacy settings</a> as desired.</li>
+<li><strong>Opt-out</strong>: Free/Plus ChatGPT users can opt out of model training in their OpenAI settings.</li>
+<li><strong>Temporary Chat</strong>: Use “Temporary Chat” mode in ChatGPT for extra privacy—your chats are auto-deleted within 30 days.</li>
+<li>Do not share personally identifiable information or confidential data in public issues, pull requests, or chat sessions.</li>
+</ul>
+
+<hr />
+
+<h2>4. Data Retention &amp; Deletion</h2>
+
+<ul>
+<li>Chat content may be retained by OpenAI for up to 30 days, unless otherwise deleted or opted out by the user.  </li>
+<li>API, Enterprise, and Team data is not used for model training by default, and retention is workspace-admin controlled.</li>
+</ul>
+
+<hr />
+
+<h2>5. Third-Party Links</h2>
+
+<ul>
+<li>This project links to external websites (e.g., GitHub, OpenAI).<br />
+Please review their privacy policies when visiting or interacting with those platforms.</li>
+</ul>
+
+<hr />
+
+<h2>6. Children’s Privacy</h2>
+
+<ul>
+<li>AutoTechGPT is intended for automotive professionals, hobbyists, and learners age 16 and older.</li>
+<li>We do not knowingly collect or solicit data from children under 16.</li>
+</ul>
+
+<hr />
+
+<h2>7. Changes to This Policy</h2>
+
+<ul>
+<li>We may update this Privacy Policy as the project or platform evolves.</li>
+<li>Significant changes will be posted to this repository and noted in the changelog.</li>
+</ul>
+
+<hr />
+
+<h2>8. Contact</h2>
+
+<p>For privacy-related questions, concerns, or removal requests,<br />
+please <a href="https://github.com/BordneAI/AutoTechGPT/issues">open an issue</a> or contact the repository maintainer via GitHub.</p>
+
+<hr />
+
+<h2>9. Relevant Policies</h2>
+
+<ul>
+<li><a href="https://openai.com/policies/terms-of-use">OpenAI Terms of Use</a></li>
+<li><a href="https://openai.com/policies/privacy-policy">OpenAI Privacy Policy</a></li>
+<li><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">GitHub Terms of Service</a></li>
+<li><a href="https://docs.github.com/en/github/site-policy/github-privacy-statement">GitHub Privacy Statement</a></li>
+</ul>
+
+<hr />
+
+<p><em>This policy applies only to the open-source AutoTechGPT project and its public interfaces. For OpenAI’s handling of your data, please review <a href="https://openai.com/policies/privacy-policy">OpenAI’s Privacy Policy</a>.</em></p>
+
+    </article>
+  </div>
+  <footer>
+  &copy; 2025 AutoTechGPT by BordneAI. All rights reserved.
+</footer>
+</body>
+</html>

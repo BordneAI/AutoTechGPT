@@ -105,6 +105,18 @@ Want to deploy a branded version?
 
 ---
 
+## 📚 Project Policies
+
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Privacy Policy](PRIVACY_POLICY.md)
+- [OpenAI Terms of Use](https://openai.com/policies/terms-of-use) | [Privacy Policy](https://openai.com/policies/privacy-policy)
+- [GitHub Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) | [Privacy Statement](https://docs.github.com/en/github/site-policy/github-privacy-statement)
+
+> **Note:** All conversations and content are processed by OpenAI systems and may be subject to OpenAI’s and GitHub’s policies.
+
+---
+
 ## 🌐 GitHub & Community
 
 - 💬 **Chat with AutoTechGPT:**  

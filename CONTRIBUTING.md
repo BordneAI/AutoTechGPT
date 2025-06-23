@@ -1,3 +1,4 @@
+
 # 🤝 Contributing to AutoTechGPT
 
 Welcome, automotive tech enthusiasts! 🚗🧰  
@@ -77,11 +78,16 @@ We welcome:
 
 ## Code of Conduct
 
-- Be **kind, constructive, and respectful** to all contributors and users.
-- **No hate speech, harassment, or discrimination**.
-- Automotive culture is for everyone—let’s keep it that way! 🏁
+Be **kind, constructive, and respectful** to all contributors and users.
+No hate speech, harassment, or discrimination.
 
-See our [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) for full details.
+Automotive culture is for everyone—let’s keep it that way! 🏁
+
+By contributing, you agree to our [Code of Conduct](CODE_OF_CONDUCT.md) and [Privacy Policy](PRIVACY_POLICY.md).
+
+All contributions are public and may be processed by GitHub and OpenAI according to their respective policies:
+- [OpenAI Privacy Policy](https://openai.com/policies/privacy-policy)
+- [GitHub Privacy Statement](https://docs.github.com/en/github/site-policy/github-privacy-statement)
 
 ---
 

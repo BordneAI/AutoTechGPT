@@ -1,3 +1,4 @@
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
@@ -49,6 +50,8 @@ This Code of Conduct applies within all project spaces, including:
 - Chat sessions (e.g., [AutoTechGPT live chat](https://chatgpt.com/g/g-67cd8fdbad208191bd324de8ac19d901-autotechgpt))
 - Community spaces (e.g., Discussions, Pull Requests, Issues)
 - Private communications relating to the project
+
+For questions or to report a violation, please refer to our [Contributing Guidelines](CONTRIBUTING.md) and [Privacy Policy](PRIVACY_POLICY.md).
 
 ---
 
