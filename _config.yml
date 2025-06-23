@@ -1,0 +1,20 @@
+title: "AutoTechGPT Docs"
+description: "The open-source, AI-powered assistant for automotive diagnostics, repair, training, and career support."
+theme: "just-the-docs"
+logo: "/docs/assets/logo.png"
+color_scheme: "dark"
+
+nav:
+  - Home: index.md
+  - Getting Started: getting_started.md
+  - Menu System: menu_system.md
+  - Advanced Features: advanced_features.md
+  - Troubleshooting: troubleshooting.md
+  - FAQ: faq.md
+  - Contributing: contributing.md
+  - Code of Conduct: code_of_conduct.md
+  - Privacy Policy: privacy_policy.md
+  - Security Policy: security.md
+  - License: license.md
+  - Changelog: changelog.md
+  - Roadmap: roadmap.md
